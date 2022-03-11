@@ -1,0 +1,441 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+* {
+  box-sizing: border-box !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Bebas Neue", cursive !important;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: 400;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 13px;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #212121;
+  text-decoration: none !important;
+  opacity: 1;
+}
+button:focus {
+  outline: none;
+}
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+p {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+}
+a {
+  color: #222222;
+  text-decoration: none;
+  outline: none !important;
+}
+a,
+.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+:focus {
+  outline: 0;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*---------------------------- preloader area ----------------------------*/
+.loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader img {
+  width: 280px;
+}
+
+.text_align_center {
+  text-align: center;
+}
+/*--------------------------------------------------------------------- header area ---------------------------------------------------------------------*/
+.logo_section {
+  text-align: center;
+}
+.logo {
+  float: left;
+  margin-top: -15px;
+  padding-bottom: 6px;
+}
+nav.main-menu {
+  float: left;
+  margin-left: 0;
+  margin-left: 0;
+}
+
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 0px 0px 0px 0px;
+  background: #efefef;
+}
+.logo a {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 40px;
+}
+
+.carousel-inner .item > img {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+/** about section **/
+.about {
+  background-color: #fff;
+  padding-top: 90px;
+}
+.about .about-box {
+  text-align: left;
+}
+
+.about .about-box h2 {
+  padding: 0;
+  color: #0f5992;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.about .about-box p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #000;
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about .about-box a {
+  font-size: 16px;
+  border: #0f5992 solid 1px;
+  background-color: #0f5992;
+  color: #fff;
+  padding: 9px 0px;
+  max-width: 171px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+.about .about-box a:hover {
+  background-color: #5cc434;
+  border: #5cc434 solid 1px;
+  color: #fff;
+}
+.about .about-box figure {
+  margin: 0;
+}
+.about .about-box figure img {
+  width: 100%;
+}
+
+.width {
+  width: 25%;
+}
+.important {
+  background-color: #fff;
+  padding-top: 90px;
+}
+.important .titlepage {
+  text-align: center;
+}
+.important .titlepage span {
+  padding-top: 30px;
+  display: inline-block;
+  font-size: 17px;
+}
+.important_bg {
+  background: #70e442;
+  padding: 60px 0px;
+}
+.important_bg .important_box {
+  text-align: center;
+}
+
+.important_bg .important_box h3 {
+  color: #0f5992;
+  font-size: 46px;
+  line-height: 46px;
+
+  padding: 0;
+}
+.important_bg .important_box h3:hover {
+  color: #fff;
+}
+
+.important_bg .important_box span:hover {
+  color: #fff;
+}
+
+.important_bg .important_box span {
+  font-size: 29px;
+  line-height: 26px;
+  color: #0f5992;
+  padding-top: 20px;
+  font-weight: 400;
+  display: inline-block;
+}
+.important .important_box a {
+  font-size: 16px;
+  border: #fff solid 1px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 27px;
+  display: inline-block;
+}
+
+.titlepage {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.titlepage span {
+  padding-top: 30px;
+  display: inline-block;
+  color: #5cc434;
+}
+.yellow {
+  color: #5cc434;
+}
+.titlepage h2 {
+  padding: 0;
+
+  color: #0f5992;
+  line-height: 55px;
+  font-size: 50px;
+}
+
+.navbar {
+  background-color: #fff;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  padding: 0px;
+  box-shadow: 0 8px 6px -6px gray;
+  margin-bottom: 0px !important;
+  display: block !important;
+  padding: 7px;
+}
+
+.navbar-brand {
+  display: flex;
+  font-size: 30px !important;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-top: -15px;
+  margin-right: 8px;
+}
+
+.navbar-nav {
+  float: right !important;
+}
+
+.navbar ul li {
+  padding-left: 90px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar a {
+  color: #0f5992 !important;
+}
+
+.footer {
+  background: #0f0824;
+  padding-top: 80px;
+  margin-top: 125px;
+}
+.footer h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+.footer span {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding-bottom: 30px;
+  display: block;
+}
+.footer .address h3 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 500;
+}
+
+ul.Links_footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+}
+ul.Links_footer li a {
+  display: block;
+  color: #fcfbfb;
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+}
+ul.Links_footer li a:hover {
+  color: #0f5992;
+}
+ul.Links_footer li {
+  padding-bottom: 6px;
+  color: #3e7f21;
+  display: block;
+  position: relative;
+}
+
+#portfolio {
+  padding-top: 100px;
+}
+
+#portfolio .mix {
+  padding: 10px;
+}
+
+.copyright {
+  padding: 20px 0px;
+  margin-top: 55px;
+  background-color: #180b3f;
+}
+.copyright p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.copyright a {
+  color: #fff;
+}
+.copyright a:hover {
+  color: #0f5992;
+}
+/** end footer **/
+/*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
